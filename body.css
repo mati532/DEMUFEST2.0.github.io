@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #6dadc2;
+    --secondary-color: #283e51;
+    --dark-bg: #000000fc;
+    --light-text: #e1f5fe;
+    --accent-blue: #64cdfa;
+    --error-color: #ff4d4d;
+    --success-color: #4dff88;
+    --gradient-blue: linear-gradient(to right, #4b79a1, #283e51);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

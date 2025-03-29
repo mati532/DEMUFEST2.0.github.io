@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: -20px;
+    animation: slideLeftReturn 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px rgba(100, 205, 250, 0.5);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

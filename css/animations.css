@@ -1,0 +1,23 @@
+@keyframes slideLeftReturn {
+    0% { transform: translateX(-35%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes jumpEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes colorPulse {
+    0% { background: #006181; }
+    20% { background: #83ccea; }
+    40% { background: #97d1e0; }
+    60% { background: #e2f1f5; }
+    80% { background: #649dad; }
+    100% { background: #337b94; }
+}
+
+@keyframes vanishIn {
+    0% { opacity: 0; transform: scale(2); filter: blur(90px); }
+    100% { opacity: 1; transform: scale(1); filter: blur(0); }
+}
